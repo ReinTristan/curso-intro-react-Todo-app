@@ -20,7 +20,6 @@ function useLocalStorage(itemName, initialValue) {
 				setItem(parsedItem)
 				setLoading(false)
 			}, 1000)
-			throw new Error()
 		} catch (error) {
 			setError(error)
 		}
