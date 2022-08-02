@@ -1,0 +1,16 @@
+.EmptyTodo-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    box-shadow: 0px 5px 50px rgb(32, 35, 41, 0.15);
+}
+.EmptyTodo-text {
+    margin: 24px 0 24px 24px;
+    width: calc(100% - 120px);
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 400;
+    text-align: center;
+}
