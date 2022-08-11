@@ -12,6 +12,7 @@ import { TodosError } from '../TodosError'
 import { EmptyTodos } from '../EmptyTodos'
 import { TodoHeader } from '../TodoHeader'
 import { useTodos } from './useTodos'
+import { ChangeAlertWithStorageListener } from '../ChangeAlert'
 function App() {
 	const {
 		loading,
@@ -26,6 +27,7 @@ function App() {
 		searchValue,
 		setSearchValue,
 		addTodo,
+		syncTodos,
 	} = useTodos()
 	return (
 		<React.Fragment>
@@ -65,6 +67,7 @@ function App() {
 				</Modal>
 			)}
 			<CreateTodoButton openModal={openModal} setOpenModal={setOpenModal} />
+			<ChangeAlertWithStorageListener sync={syncTodos} />
 		</React.Fragment>
 	)
 }
