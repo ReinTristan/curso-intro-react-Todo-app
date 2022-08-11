@@ -2,7 +2,6 @@ import React from 'react'
 import { useStorageListener } from './useStorageListener'
 import './ChangeAlert.css'
 function ChangeAlert({ sync }) {
-	console.log(sync)
 	const { show, toggleShow } = useStorageListener({ sync })
 	if (show) {
 		return (
