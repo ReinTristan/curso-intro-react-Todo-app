@@ -1,9 +1,7 @@
-import React, { useContext, useImperativeHandle, useState } from 'react'
-import { TodoContext } from '../TodoContext'
+import React, { useState } from 'react'
 import './TodoForm.css'
-function TodoForm() {
+function TodoForm({ addTodo, setOpenModal }) {
 	const [newTodoValue, setNewTodoValue] = useState('')
-	const { addTodo, setOpenModal } = useContext(TodoContext)
 
 	const [verifyTodo, setVerifyTodo] = useState(false)
 
